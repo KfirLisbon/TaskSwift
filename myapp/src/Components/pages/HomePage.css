@@ -1,0 +1,162 @@
+/* Base styles for all screen sizes */
+.home-container {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+.header {
+    background-image: url('../../Assets/Pictures/vecteezy_textured-crumpled-black-paper-background_6893472.jpg');
+    color: white;
+    padding: 50px 20px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fade-in effect for header */
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.9) 100%);
+    opacity: 0; /* Start invisible */
+    transition: opacity 1s ease-in; /* Transition for fade-in */
+}
+
+.header.fade-in::after {
+    opacity: 1; /* Fade in effect */
+}
+
+/* Call to Action Button */
+.cta-button {
+    background: #0056b3;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2em;
+    transition: background-color 0.4s ease, transform 0.3s;
+}
+
+.cta-button:focus {
+    outline: 2px solid #ffcc00; /* Outline on focus for accessibility */
+}
+
+.cta-button:hover {
+    background-color: #0055af; /* Darker blue on hover */
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.content:hover, .time-management:hover, .sales-pitch:hover, .about-me:hover {
+    transform: translateY(-8px);
+    transition: transform 0.4s, box-shadow 0.2s;
+}
+
+/* Section Styles */
+.content, .time-management, .sales-pitch, .about-me {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #e0e0e0;
+}
+
+.content h2, .time-management h2, .sales-pitch h2, .about-me h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0; /* Add spacing between list items */
+    font-size: 1.1em; /* Slightly larger font for list items */
+}
+
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .header h1 {
+        font-size: 2.5em; /* Smaller size on larger tablets */
+    }
+    .header p {
+        font-size: 1.2em; /* Adjust for larger tablets */
+    }
+    .content h2 {
+        font-size: 2.2em; /* Smaller section titles */
+    }
+}
+
+@media (max-width: 992px) {
+    .header h1 {
+        font-size: 2.2em; /* Further adjust for medium tablets */
+    }
+    .header p {
+        font-size: 1.1em; /* Smaller paragraph */
+    }
+    .content h2 {
+        font-size: 2em; /* Smaller section titles */
+    }
+    .cta-button {
+        padding: 12px 24px; /* Smaller button on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em; /* Smaller size on mobile */
+    }
+    .header p {
+        font-size: 1em; /* Adjust for mobile */
+    }
+    .content h2 {
+        font-size: 1.8em; /* Smaller section titles */
+    }
+    .content, .time-management, .sales-pitch, .about-me {
+        padding: 30px 10px; /* Less padding on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 30px 10px; /* Less padding on small screens */
+    }
+    .cta-button {
+        font-size: 1em; /* Smaller button text */
+    }
+    ul li {
+        font-size: 1em; /* Adjust list item font size */
+    }
+}

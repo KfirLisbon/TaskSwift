@@ -1,0 +1,110 @@
+/* General Chatbot Styles */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Chat Button Styling */
+.chat-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Circular button */
+    width: 60px; /* Button size */
+    height: 60px; /* Button size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.chat-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Chatbot Menu Styling */
+.chatbot-menu {
+    width: 300px; /* Width of the chatbot menu */
+    background-color: #fff; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow */
+    border-radius: 8px; /* Rounded corners */
+    position: fixed; /* Fixed positioning */
+    bottom: 80px; /* Position above the chat button */
+    right: 20px; /* Align with chat button */
+    z-index: 1000; /* Ensure it stays on top */
+    padding: 10px; /* Padding for better spacing */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Size of close button */
+}
+
+/* Chat Log Styles */
+#chatlog {
+    max-height: 300px; /* Set a max height for the chat log */
+    overflow-y: auto; /* Allow scrolling */
+    margin-bottom: 10px; /* Space between chat log and questions */
+}
+
+/* Message Styles */
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    opacity: 0; /* Start with opacity 0 */
+    animation: fadeIn 0.5s forwards; /* Add fade-in animation */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* User Message Styling */
+.user-message {
+    background-color: #e1f5fe; /* Light blue for user messages */
+    align-self: flex-end; /* Align to the right */
+}
+
+/* Bot Message Styling */
+.bot-message {
+    background-color: #ffe0b2; /* Light orange for bot messages */
+    align-self: flex-start; /* Align to the left */
+}
+
+/* FAQ Buttons Styling */
+#questions {
+    display: flex;
+    flex-direction: column; /* Stack questions vertically */
+}
+
+.faq-button {
+    background-color: #0067d4; /* Light background for FAQ buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px; /* Padding */
+    margin: 5px 0; /* Margin between buttons */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.faq-button:hover {
+    background-color: #004a99; /* Darker shade on hover */
+}

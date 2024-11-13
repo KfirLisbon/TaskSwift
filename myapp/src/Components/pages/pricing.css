@@ -1,0 +1,199 @@
+/* General Styles */
+.pricing-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, #001f3f 0%, #0c3c60 100%);
+    color: #fff;
+}
+
+.Note {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: red;
+    text-align: left;
+}
+
+.pricing-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #FFD700;
+}
+
+.pricing-title, .pricing {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Flexbox for Pricing Plans */
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Individual Pricing Plan Card */
+.pricing-plan-card {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 30%;
+    position: relative;
+    margin: 10px; /* Add margin for spacing */
+}
+
+.pricing-plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+/* Plan Type & Best Offer */
+.plan-type {
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.best-offer {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Plan Pricing */
+.price {
+    font-size: 2em;
+    color: #007bff;
+}
+
+.price-amount {
+    font-weight: bold;
+}
+
+/* Plan Features & Description */
+.plan-description {
+    font-size: 1.1em;
+    margin: 15px 0;
+    color: #555;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.feature {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.text-in-card {
+    text-align: left;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #00bfff;
+}
+
+/* Pricing Section (Description under plans) */
+.pricing-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.pricing-section h4 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pricing-paragraph {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer Styles */
+.footer-pricing {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 40px; /* Added margin */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .pricing-plan-card {
+        width: 45%; /* Adjust card width for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-plan-card {
+        width: 90%; /* Full width on small devices */
+    }
+
+    .pricing-title {
+        font-size: 2em; /* Smaller title for mobile */
+    }
+
+    .Note {
+        font-size: 0.9em; /* Smaller note text */
+    }
+
+    .plan-type {
+        font-size: 1.5em; /* Smaller plan type font */
+    }
+
+    .price {
+        font-size: 1.5em; /* Smaller price font */
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-title {
+        font-size: 1.5em; /* Even smaller title for extra small devices */
+    }
+
+    .pricing-section {
+        padding: 10px; /* Less padding for smaller screens */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Smaller button padding */
+        font-size: 0.9em; /* Smaller button text */
+    }
+
+    .best-offer {
+        font-size: 0.7em; /* Smaller best offer text */
+    }
+}

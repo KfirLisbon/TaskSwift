@@ -1,0 +1,93 @@
+.login-page {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.login-content {
+  width: 50%; /* Half the screen */
+  padding: 40px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-header {
+  font-size: 28px; /* Larger header */
+  color: #343a40; /* Darker text */
+  margin-bottom: 20px;
+}
+
+.login-intro {
+  font-size: 16px;
+  color: #495057; /* Softer gray */
+  margin-bottom: 30px; /* Increased margin */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Enhanced focus effect */
+}
+
+button {
+  background-color: #28a745; /* Green button */
+  color: white;
+  padding: 14px; /* Increased button padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger font */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for a slight pop */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.login-footer {
+  margin-top: 20px; /* Increased margin */
+  font-size: 14px;
+  color: #666;
+}
+
+.login-footer a {
+  color: #007bff; /* Blue link */
+  text-decoration: none;
+  font-weight: 500; /* Slightly bolder link */
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.login-image {
+  width: 50%; /* Half the screen */
+  background-image: url('/src/Pictures/vecteezy_abstract-space-background-3_6646384.jpg');
+  background-size: cover;
+  background-position: center;
+}

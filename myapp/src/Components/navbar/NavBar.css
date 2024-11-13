@@ -1,0 +1,120 @@
+/* General Navbar Styles */
+.navbar {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between brand and nav items */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1px;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 20px;
+  font-size: 1.1rem;
+  color: white !important;
+}
+
+/* Login and Logout Button Styles */
+.loginbutton {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.loginbutton:hover {
+  background-color: #003d7e;
+  color: white;
+}
+
+/* Welcome Text Styling */
+.welcome-text {
+  color: white;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+/* Profile Picture Styles */
+.navbar-profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer; /* Show pointer cursor when hovering over the image */
+  margin-left: 10px; /* Space between the image and the logout button */
+}
+
+/* Profile Picture Link */
+.profile-picture-link {
+  display: flex; /* Ensure the link is an inline flex item */
+  align-items: center; /* Vertically align the image */
+}
+
+/* Navbar Brand and Link Component Styles */
+.navbrand, .components, .login-as {
+  color: white !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
+  .loginbutton {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .loginbutton {
+    margin-top: 10px;
+  }
+
+  .welcome-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .loginbutton {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .welcome-text {
+    font-size: 0.8rem;
+  }
+}

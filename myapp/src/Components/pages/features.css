@@ -1,0 +1,316 @@
+/* General Styles */
+.features-text {
+    position: relative;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styles */
+.features-text h5 {
+    text-align: left;
+    color: #e3e3e3; 
+    font-size: 1.5rem; 
+    margin-top: 30px; 
+    font-weight: 400;
+}
+
+.features-text p {
+    text-align: left;
+    color: #d0d0d0; 
+    margin: 20px 0;
+    line-height: 1.6; 
+    font-size: 1.1rem; 
+}
+
+/* Header Styles */
+.features-header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Color Picker Styles */
+.color-picker {
+    display: flex;
+    gap: 5px; 
+    margin-top: 10px;
+}
+
+.color-option {
+    width: 30px; 
+    height: 30px; 
+    border: 2px solid transparent; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.color-option:hover {
+    border: 2px solid #000; 
+    transform: scale(1.1);
+}
+
+.color-option.selected {
+    border: 2px solid #000; 
+}
+
+/* Button Styles */
+.add-task-button {
+    padding: 10px 15px;
+    border-radius: 5px; 
+    background-color: #0056b3; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    margin-top: 10px;
+}
+
+.add-task-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+/* Input Container Styles */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; 
+}
+
+.task-input,
+.from-date,
+.to-date,
+select {
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    transition: border-color 0.3s; 
+    margin: 10px 0; 
+    width: 100%; 
+    max-width: 400px; 
+}
+
+.task-input:focus,
+.from-date:focus,
+.to-date:focus,
+select:focus {
+    border-color: #007BFF; 
+    outline: none; 
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .features-text {
+        width: 90%; 
+    }
+    
+    .features-text h5 {
+        font-size: 1.4rem; 
+    }
+    
+    .features-text p {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 992px) {
+    .features-text {
+        padding: 40px 15px; /* Less padding on medium devices */
+    }
+
+    .features-text h5 {
+        font-size: 1.3rem; 
+    }
+
+    .features-text p {
+        font-size: 0.95rem; 
+    }
+    
+    .add-task-button {
+        width: 80%; /* Full width button on medium devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .features-text {
+        padding: 30px 10px; /* Less padding on small devices */
+    }
+
+    .features-text h5 {
+        font-size: 1.2rem; 
+    }
+
+    .features-text p {
+        font-size: 0.9rem; 
+    }
+
+    .task-input,
+    .from-date,
+    .to-date,
+    select {
+        max-width: 100%; /* Full width inputs on small devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .features-text {
+        padding: 20px 5px; /* Minimal padding on extra small devices */
+    }
+
+    .features-header {
+        font-size: 1.5em; /* Smaller header font size */
+    }
+
+    .add-task-button {
+        font-size: 0.9em; /* Smaller button text */
+    }
+
+    .color-option {
+        width: 25px; /* Smaller color options */
+        height: 25px; 
+    }
+}
+
+/* Menu Styles */
+.menu {
+    position: absolute;
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    padding: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+}
+
+.menu button,
+.menu select {
+    display: block;
+    width: 100%; 
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: transparent;
+}
+
+.menu button:last-child,
+.menu select:last-child {
+    margin-bottom: 0; 
+}
+
+/* Calendar Styles */
+.Calendar-Input-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    backdrop-filter: blur(10px); 
+}
+
+/* Overall Calendar Container */
+.calendar-container {
+    width: 100%;
+    max-width: 800px; 
+    margin-top: 20px; 
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+/* Header Styles */
+.rbc-header {
+    background-color: rgba(30, 30, 30, 0.8); 
+    color: #00ccff; 
+    font-weight: bold; 
+    font-size: 1.4em; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+/* Month View Styles */
+.rbc-month-view {
+    background-color: rgba(40, 40, 40, 0.9); 
+    color: #0155ad;
+}
+
+/* Day Slot Styles */
+.rbc-day-slot {
+    color: white; 
+    background-color: rgba(50, 50, 50, 0.8); 
+    padding: 10px; 
+    transition: background-color 0.3s; 
+}
+
+.rbc-day-slot.current-day {
+    background-color: rgba(0, 204, 255, 0.7); 
+    color: black; 
+}
+
+/* Day and Week View Styles */
+.rbc-day-view,
+.rbc-week-view {
+    background-color: rgba(50, 50, 50, 0.9); 
+    color: white; 
+}
+
+/* Event Styles */
+.rbc-event {
+    background-color: #00ccff; 
+    border-radius: 5px; 
+    padding: 5px; 
+    color: white; 
+}
+
+.rbc-event:hover {
+    background-color: #0099cc; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Toolbar Styles */
+.rbc-toolbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgba(30, 30, 30, 0.8); 
+    padding: 10px;
+    border-bottom: 1px solid #007BFF; 
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+    flex: 1; 
+    text-align: center; 
+    font-size: 1.4em; 
+    color: #00ccff; 
+}
+
+/* Button Styles */
+.rbc-toolbar button {
+    color: #00ccff; 
+    border: none; 
+    background: transparent; 
+    font-size: 1em; 
+    margin: 0 5px; 
+    padding: 5px 10px; 
+    transition: color 0.3s; 
+    cursor: pointer; 
+}
+
+.rbc-toolbar button:hover {
+    color: #00ccff; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px; 
+}

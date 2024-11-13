@@ -1,0 +1,87 @@
+/* Profile.css */
+.loading-page {
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+    font-size: 1.2em;
+    background-color: #f3f4f6;
+    border-radius: 25px;
+    margin-top: 225px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+  }
+  
+/* Ensure the parent takes up full height */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    
+    background-size: cover; /* Ensure the background covers the whole screen */
+    padding: 20px;
+    color: white; /* White text for visibility */
+    text-align: center; /* Center text */
+  }
+  
+  /* Styling the form container */
+  .profile-section form {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px;  /* Rounded corners */
+    padding: 30px;
+    width: 100%;
+    max-width: 500px; /* Set a maximum width to prevent the form from being too wide */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow for better readability */
+    backdrop-filter: blur(10px); /* Optional: Blur background behind the form */
+  }
+  
+  /* Styling for input fields and text areas */
+  .profile-section input, .profile-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222; /* Dark input background */
+    color: white; /* White text */
+    font-size: 16px;
+  }
+  
+  .profile-section button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-section button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+  }
+  
+  /* Profile picture styling */
+  .profile-picture {
+    width: 150px; /* Set a specific size */
+    height: 150px;
+    object-fit: cover; /* Crop and fit the image into the box */
+    border-radius: 50%; /* Make the picture round */
+    border: 2px solid #fff; /* Optional: Add a white border around the image */
+  }
